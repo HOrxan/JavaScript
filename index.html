@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <meta http-equiv="refresh" content="3">
+    </head>
+    <body>
+        <p id="a"></p>
+        <script>
+        function solution(s, t) {
+    // Write your code here
+    let text = [5, 38, 6, 45];
+   let txt = "";
+   let y =0;
+let tx = text.map( x => x *2);
+
+
+
+
+
+    for(let key of text){
+        txt += key + " ";
+    }
+    
+    return txt + "<br>" + tx;
+    }
+   
+let text =solution("ab##", "a#b#");
+document.getElementById("a").innerHTML = text;
+
+        </script>
+    </body>
+</html>
