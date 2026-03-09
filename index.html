@@ -10,24 +10,13 @@
     <body>
         <p id="a"></p>
         <script>
-        function solution(s, t) {
+       function solution(title) {
     // Write your code here
-    let text = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-   let txt = 0;
-   let y = 0;
-   let xx =0;
-   let tx = text.map( x =>xx+= x );
-
-
-
-    for(let key of text){
-        txt += key ;
-    }
-    
-    return txt + "<br>" + tx;
-    }
+    let a = title.split(" ");
+    return a;
+}
    
-let text =solution("ab##", "a#b#");
+let text =solution("capiTalIze tHe titLe");
 document.getElementById("a").innerHTML = text;
 
         </script>
