@@ -10,18 +10,16 @@
     <body>
         <p id="a"></p>
         <script>
-       function solution(title) {
+       function solution(coordinate1, coordinate2) {
     // Write your code here
-    let a = 0;
-     for(let i =1; i< s1.length; i++){
-        if(s1[i]==s2[i] ||s1[i]==s1[i+2]){
-            a+=0;
-        }else{ a+=1;}
-        
-    }
-    return a;
+
+if ((coordinate1[0].charCodeAt(0)-96 + Number(coordinate1[1])) % 2 == (coordinate2[0].charCodeAt(0)-96 + Number(coordinate2[1])) % 2) {return true}
+else{return false}
+
 }
-let text =solution("capiTalIze tHe titLe");
+    
+
+let text =solution("a1", "c3");
 document.getElementById("a").innerHTML = text;
         </script>
     </body>
