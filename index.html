@@ -14,8 +14,8 @@
            function solution(word1, word2) {
     // Write your code here
     let a = word1.join("");
-    let b =word2.toString();
-    return word1 + word2;
+    let b =word2.join("");
+    return typeof word1 + word2;
 }
             let text = solution(["ab", "c"], ["a", "bc"]);
             document.getElementById("a").innerHTML = text;
