@@ -13,10 +13,12 @@
         <script>
            function solution(word1, word2) {
     // Write your code here
-    let a = word1.toString();
-    let b =word2.toString();
-    return typeof a + b;
-}
+    if (word1.join("") == word2.join("")) {return true}
+    else{return false}
+        
+    }
+
+
             let text = solution(["ab", "c"], ["a", "bc"]);
             document.getElementById("a").innerHTML = text;
         </script>
