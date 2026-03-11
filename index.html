@@ -11,11 +11,12 @@
     <body>
         <p id="a"></p>
         <script>
-            function solution(coordinate1, coordinate2) {
-                // Write your code here
-                if ((coordinate1[0].charCodeAt(0) - 96 + Number(coordinate1[1])) % 2 == (coordinate2[0].charCodeAt(0) - 96 + Number(coordinate2[1])) % 2) { return true }
-                else { return false }
-            }
+           function solution(word1, word2) {
+    // Write your code here
+    let a = word1.toString();
+    let b =word2.toString();
+    return word1 + word2;
+}
             let text = solution("a1", "c3");
             document.getElementById("a").innerHTML = text;
         </script>
