@@ -10,23 +10,14 @@
 
     <body>
         <p id="a"></p>
+
         <script>
-            function solution(firstWord, secondWord, targetWord) {
-                // Write your code here
-                let f = "", s = "", t = ""; 
-                for (let i = 0; i < firstWord.length; i++) {
-                    f += firstWord.codePointAt(i)-97;
-                }
-                for (let i = 0; i < secondWord.length; i++) {
-                    s += secondWord.codePointAt(i)-97;
-                }
-                for (let i = 0; i < targetWord.length; i++) {
-                    t +=targetWord.codePointAt(i)-97;
-                }
-                if ((Number(f) + Number(s)) == Number(t)) {return true} else {return false}
-                    
-                }
-            let text = solution("acb", "cba", "cdb");
+          function solution(s) {
+    // Write your code here
+
+return s.split("*").length-1;
+}
+            let text = solution("l*e*et|code|*");
             document.getElementById("a").innerHTML = text;
         </script>
     </body>
