@@ -8,14 +8,16 @@
     </head>
 
     <body>
-        <p id="a"></p>
+        <p id="demo"></p>
         <script>
-            function solution(s) {
-                //
-                return s.split("*").length - 1;
-            }
-            let text = solution("l*e*et|code|*");
-            document.getElementById("a").innerHTML = text;
+            function add(a, b) {
+  let result = a + b;
+  return result;
+}
+document.getElementById("demo").innerHTML = add(10, 5);
+document.getElementById("demo").innerHTML = add(10, 50);
+document.getElementById("demo").innerHTML = add(10, 500);
+document.getElementById("demo").innerHTML = add(10, 5000);
         </script>
     </body>
 </html>
