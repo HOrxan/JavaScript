@@ -8,15 +8,33 @@
     </head>
     <body>
         <p id="demo"></p>
+        <p id="d"></p>
         <script>
-            function add(a, b) {
-  let result = a + b;
-  return result;
-}
-document.getElementById("demo").innerHTML = add(10, 5);
-document.getElementById("demo").innerHTML = add(1, 5);
-document.getElementById("demo").innerHTML = add(10, 5);
-document.getElementById("demo").innerHTML = add(1, 5);
+            let t = [4, 9, 16, 25, 29, 100, 66, 77];
+            let sum = 0;
+            
+  for (let arg of t) {sum += arg;}
+  document.getElementById("demo").innerHTML = sum;
+
+
+
+
+
         </script>
+
+        <!-- <script>
+window.onload = function() {
+  const element = document.createElement("script");
+  element.src = "two-sum.js";
+  document.body.appendChild(element);
+};
+
+</script> -->
+<!-- <script>
+let x = 15 * 5;
+debugger;
+document.getElementById("d").innerHTML = x;
+</script> -->
+
     </body>
 </html>
