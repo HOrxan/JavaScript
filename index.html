@@ -1,20 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <meta http-equiv="refresh" content="">
     </head>
+
     <body>
         <p id="demo"></p>
         <p id="d"></p>
         <script>
-            let t = [4, 9, 16, 25, 29, 100, 66, 77];
-            let sum = 0;
+// Düzgün
+var twoSum = function(nums, target) {
+  let a = [];  // və ya new Array()
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] + nums[j] == target) {
+        a.push(i);
+        a.push(j);
+        return a;
+      }
+    }
+  }
+}
 
-  for (let arg of t) {sum += arg;}
-  document.getElementById("demo").innerHTML = sum;
+
+            var twoSum = function (nums, target) {
+                let a = [];
+                for (let i = 0; i < nums.length; i++) {
+                    for (let j = i +1; j < nums.length; j++) {
+                    if (nums[i] + nums[j] ==target) {
+ a.push(i);
+ a.push(j);
+                        return a;
+                    } 
+                    }
+                        }
+                }
+                        let b = twoSum([2, 7, 11, 15], 18);
+                        console.log(b);
+                        document.getElementById("d").innerHTML = b;
+
+
+                        // 
+                        // let a = nums[i] + nums[j];
+            // function solution(words, s) {
+            //     // Write your code here
+            //     let d = "";
+            //     let e = words.length;
+            //     for (let i = 0; i < e; i++) {
+            //         let b = words.shift();
+            //         let c = b[0];
+            //         d += c;
+            //     }
+            //     let ss = s.toString();
+            //     let dd = d.toString();
+            //     if (ss === dd) {
+            //         return true;
+            //     }
+            //     return;
+            // }
+            // let a = solution([2, 7, 11, 15], 9);
         </script>
         <!-- <script>
 window.onload = function() {
@@ -24,11 +72,12 @@ window.onload = function() {
 };
 
 </script> -->
-<!-- <script>
+        <!-- <script>
 let x = 15 * 5;
 debugger;
 document.getElementById("d").innerHTML = x;
 </script> -->
 
     </body>
+
 </html>
