@@ -15,5 +15,4 @@ function solution(s) {
     }
     let s4 = s3 % 3;
     if (s4 === 1) { return false; } else { return true };
-
 }
