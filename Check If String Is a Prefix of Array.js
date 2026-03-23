@@ -3,7 +3,6 @@ function solution(s, words) {
     let s3 = "";
     for (let i = 0; i < words.length; i++) {
         s3 += words[i];
-
         if (s == s3) {
             return true;
 
