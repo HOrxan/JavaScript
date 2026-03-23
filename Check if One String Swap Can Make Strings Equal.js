@@ -14,5 +14,4 @@ function solution(s1, s2) {
     if (t3 > 0) {
         return true;
     } else { return false; }
-
 }
