@@ -14,7 +14,6 @@ function solution(s) {
         s3 = s.length;
     }
     let s4 = s3 % 3;
-
     if (s4 === 1) { return false; } else { return true };
 
 }
