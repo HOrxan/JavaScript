@@ -6,5 +6,5 @@ function solution(coordinate1, coordinate2) {
     else { return false }
 }
 const coordinate1 = lines[0].trim();
-const coordinate2 = lines[1].trim();
+const coordinate2 =lines[1].trim();
 console.log(solution(coordinate1, coordinate2));
