@@ -9,7 +9,6 @@ function solution(s1, s2) {
         if (t1 == t2) {
             t3 += 1;
         } else { t3 += 0; }
-
     }
     if (t3 > 0) {
         return true;
