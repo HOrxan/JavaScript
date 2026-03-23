@@ -5,7 +5,6 @@ function solution(s, words) {
         s3 += words[i];
         if (s == s3) {
             return true;
-
         }
     }
     return false;
